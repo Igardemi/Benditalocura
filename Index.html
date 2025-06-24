@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bendita Locura - Carta de Bocadillos</title>
+  <style>
+    :root {
+      --color-principal: #b22222;
+      --color-fondo: #fffdf5;
+      --color-texto: #333;
+      --color-tarjeta: #ffffff;
+      --color-borde: #ddd;
+      --color-alergenos: #444;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--color-principal);
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #444;
+    }
+
+    .carta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .bocata {
+      background-color: var(--color-tarjeta);
+      border: 1px solid var(--color-borde);
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .bocata:hover {
+      transform: scale(1.02);
+    }
+
+    .nombre {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--color-principal);
+      margin-bottom: 0.5rem;
+    }
+
+    .ingredientes {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .alergenos {
+      font-size: 0.95rem;
+      color: var(--color-alergenos);
+      margin-bottom: 0.5rem;
+    }
+
+    .precio {
+      font-weight: bold;
+      font-size: 1rem;
+      text-align: right;
+      color: #222;
+    }
+
+    .leyenda {
+      font-size: 0.85rem;
+      text-align: center;
+      margin-top: 2rem;
+      color: #555;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1rem 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Bendita Locura</h1>
+  <h2>Carta de Bocadillos</h2>
+
+  <div class="carta">
+
+    <div class="bocata">
+      <div class="nombre">Caleta</div>
+      <div class="ingredientes">Hamburguesa caballo, tomate seco, parmesano, mezclum, salsa</div>
+      <div class="alergenos">🌾 🥛 🥚</div>
+      <div class="precio">6€</div>
+    </div>
+
+    <div class="bocata">
+      <div class="nombre">Chivito</div>
+      <div class="ingredientes">Lomo, queso, bacon, huevo, tomate, lechuga, mayonesa</div>
+      <div class="alergenos">🌾 🥛 🥚</div>
+      <div class="precio">6€</div>
+    </div>
+
+    <div class="bocata">
+      <div class="nombre">Bombón</div>
+      <div class="ingredientes">Lomo, queso, champiñón, mayonesa y mery</div>
+      <div class="alergenos">🌾 🥛 🥚</div>
+      <div class="precio">6€</div>
+    </div>
+
+    <div class="bocata">
+      <div class="nombre">Bomboncito</div>
+      <div class="ingredientes">Pechuga, calabacín, philadelphia, pipas y mery</div>
+      <div class="alergenos">🌾 🥛 🌰</div>
+      <div class="precio">6€</div>
+    </div>
+
+    <div class="bocata">
+      <div class="nombre">Pechuguito</div>
+      <div class="ingredientes">Pechuga, cebolla caramelizada y queso de cabra</div>
+      <div class="alergenos">🌾 🥛</div>
+      <div class="precio">6€</div>
+    </div>
+
+    <div class="bocata">
+      <div class="nombre">Martí</div>
+      <div class="ingredientes">Caballo, berenjena y roquefort</div>
+      <div class="alergenos">🌾 🥛</div>
+      <div class="precio">6€</div>
+    </div>
+
+    <div class="bocata">
+      <div class="nombre">Brascada</div>
+      <div class="ingredientes">Ternera, jamón y cebolla</div>
+      <div class="alergenos">🌾</div>
+      <div class="precio">6€</div>
+    </div>
+
+    <div class="bocata">
+      <div class="nombre">Caballo</div>
+      <div class="ingredientes">Caballo, patatas y ajos tiernos</div>
+      <div class="alergenos">🌾</div>
+      <div class="precio">6€</div>
+    </div>
+
+    <div class="bocata">
+      <div class="nombre">Salmón</div>
+      <div class="ingredientes">Salmón, philadelphia, huevo revuelto y tomate</div>
+      <div class="alergenos">🐟 🥛 🥚 🌾</div>
+      <div class="precio">7€</div>
+    </div>
+
+    <div class="bocata">
+      <div class="nombre">Moma</div>
+      <div class="ingredientes">Queso fresco, mojama, pimiento y tomate</div>
+      <div class="alergenos">🐟 🥛</div>
+      <div class="precio">6€</div>
+    </div>
+
+    <div class="bocata">
+      <div class="nombre">Serranito</div>
+      <div class="ingredientes">Jamón, patatas, pimiento y huevo</div>
+      <div class="alergenos">🌾 🥚</div>
+      <div class="precio">6€</div>
+    </div>
+
+    <div class="bocata">
+      <div class="nombre">Blanky</div>
+      <div class="ingredientes">Huevos, patatas, bacon y allioli</div>
+      <div class="alergenos">🌾 🥚 🥛 🧄</div>
+      <div class="precio">5€</div>
+    </div>
+
+    <div class="bocata">
+      <div class="nombre">Almussafes</div>
+      <div class="ingredientes">Sobrasada, queso y cebolla</div>
+      <div class="alergenos">🌾 🥛</div>
+      <div class="precio">5€</div>
+    </div>
+
+  </div>
+
+  <div class="leyenda">
+    <strong>Alérgenos:</strong><br />
+    🌾 Gluten &nbsp; 🥛 Lácteos &nbsp; 🥚 Huevo &nbsp; 🐟 Pescado &nbsp; 🌰 Frutos secos &nbsp; 🧄 Sulfitos
+  </div>
+</body>
+</html>
